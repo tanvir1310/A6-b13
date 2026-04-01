@@ -1,0 +1,151 @@
+.step-section {
+  background-color: #f9fafc;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+}
+
+.step-container {
+  flex: 1;
+  max-width: 1200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.step-header {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.step-section-heading {
+  color: #101727;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.step-section-paragraph {
+  color: #627382;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.step-main {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 40px;
+  display: grid;
+}
+
+.step-card {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 380px;
+  padding: 88px 24px;
+  display: flex;
+  position: relative;
+}
+
+.step-card-heading-main {
+  color: #101727;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.step-card-paragraph-main {
+  color: #627382;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.step-card-heading,
+.step-card-text,
+.step-image {
+  display: block;
+}
+
+.number {
+  color: #fff;
+  background-image: linear-gradient(#4f39f6, #9514fa);
+  border-radius: 100px;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  position: absolute;
+  inset: 24px 24px auto auto;
+}
+
+@media screen and (max-width: 991px) {
+  .step-main {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .step-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .step-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .step-main {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    max-width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .step-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .step-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .step-section-heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .step-main {
+    margin-top: 20px;
+  }
+
+  .step-card {
+    padding: 32px 16px;
+  }
+}
