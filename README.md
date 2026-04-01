@@ -1,1 +1,1 @@
-"Project name"
+"Project Tool"
